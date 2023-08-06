@@ -58,7 +58,7 @@ void quick_sort(vector<int>& a, int l, int r)
             if(i < j)
                 swap(a[j--], a[i]);
         }
-        a[i] = x;
+        //a[i] = x;
         quick_sort(a, l, i-1); /* 递归调用 */
         quick_sort(a, i+1, r); /* 递归调用 */
     }
